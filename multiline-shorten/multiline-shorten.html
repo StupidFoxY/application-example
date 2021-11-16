@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiline Shorten</title>
+    <link rel="stylesheet" href="./multiline-shorten.css">
+  </head>
+  <body>
+    <div class="test">
+        <span class="p suolue">
+            <span class="shape-outside"></span>
+            99999999999999999999999999999999999999999999999999999999999999
+        </span>
+        <span class="btn" onclick="toggle()">
+            展开
+        </span>
+    </div>
+  </body>
+  <script>
+      function toggle() {
+        const doc = document.querySelector('.p');
+        console.log(doc.classList)
+
+        if (!doc.classList.contains('suolue')) {
+            doc.classList.add('suolue');
+        }else {
+            doc.classList.remove('suolue');
+        }
+      }
+  </script>
+</html>

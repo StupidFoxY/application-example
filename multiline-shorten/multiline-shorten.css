@@ -1,0 +1,30 @@
+.test {
+    width: 150px;
+    border: 1px solid rebeccapurple;
+    position: relative;
+}
+.p {
+    width: 100%;
+    word-break: break-all;
+}
+.suolue {
+    height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.suolue .shape-outside {
+    float: right;
+    width: 28px;
+    height: 36px;
+    shape-outside: polygon(0 100%, 100% 20px, 100% 100%);
+}
+.btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: royalblue;
+    cursor: pointer;
+}
